@@ -1,0 +1,6 @@
+1. git clone <repo>
+2. composer update
+3. composer dumpautoload
+4. php artisan migrate
+5. php artisan db:seed
+6. php artisan storage:link
