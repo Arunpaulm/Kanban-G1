@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Unit\\UserTest::test_example":4,"Tests\\Unit\\UserTest::test_add_user_record":4},"times":{"Tests\\Feature\\HomePageTest::test_example":0.071,"Tests\\Unit\\UserTest::test_example":0.009,"Tests\\Unit\\UserTest::test_add_user_record":0.009,"Tests\\Feature\\HomePageTest::test_welcome_page_sucess":0.114}}
