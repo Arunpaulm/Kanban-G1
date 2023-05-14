@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Kanban Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="container p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">Kanban Board</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./users.html">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./roles.html">Roles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <hr />
+
+    <main class="content">
+      <div class="container p-0">
+        <div class="row gy-10">
+          <div class="col-12 col-lg-6 col-xl-2 customColumnGap">
+            <div class="card card-border-primary">
+              <div class="card-header">
+                <div class="card-actions float-right"></div>
+                <h5 class="card-title customTitleSize">awaiting allocation</h5>
+              </div>
+              <div class="card-body p-3">
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Curabitur ligula sapien, tincidunt non, euismod vitae,
+                      posuere imperdiet, leo. Maecenas malesuada.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                  <div class="p-3">
+                    <select class="custom-select">
+                      <option selected>Status</option>
+                      <option value="1">Awaiting Allocation</option>
+                      <option value="2">Ready to Start</option>
+                      <option value="3">In Development</option>
+                      <option value="3">In Testing</option>
+                      <option value="3">In Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Aenean posuere, tortor sed cursus feugiat, nunc augue
+                      blandit nunc, eu sollicitudin urna dolor sagittis.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      In hac habitasse platea dictumst. Curabitur at lacus ac
+                      velit ornare lobortis. Curabitur a felis tristique.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-block">Add new</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-2 customColumnGap">
+            <div class="card card-border-primary">
+              <div class="card-header">
+                <div class="card-actions float-right"></div>
+                <h5 class="card-title customTitleSize">ready to start</h5>
+              </div>
+              <div class="card-body p-3">
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Curabitur ligula sapien, tincidunt non, euismod vitae,
+                      posuere imperdiet, leo. Maecenas malesuada.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Aenean posuere, tortor sed cursus feugiat, nunc augue
+                      blandit nunc, eu sollicitudin urna dolor sagittis.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      In hac habitasse platea dictumst. Curabitur at lacus ac
+                      velit ornare lobortis. Curabitur a felis tristique.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-block">Add new</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-2 customColumnGap">
+            <div class="card card-border-primary">
+              <div class="card-header">
+                <div class="card-actions float-right"></div>
+                <h5 class="card-title customTitleSize">in development</h5>
+              </div>
+              <div class="card-body p-3">
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Curabitur ligula sapien, tincidunt non, euismod vitae,
+                      posuere imperdiet, leo. Maecenas malesuada.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Aenean posuere, tortor sed cursus feugiat, nunc augue
+                      blandit nunc, eu sollicitudin urna dolor sagittis.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      In hac habitasse platea dictumst. Curabitur at lacus ac
+                      velit ornare lobortis. Curabitur a felis tristique.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-block">Add new</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-2 customColumnGap">
+            <div class="card card-border-primary">
+              <div class="card-header">
+                <div class="card-actions float-right"></div>
+                <h5 class="card-title customTitleSize">in testing</h5>
+              </div>
+              <div class="card-body p-3">
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Curabitur ligula sapien, tincidunt non, euismod vitae,
+                      posuere imperdiet, leo. Maecenas malesuada.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Aenean posuere, tortor sed cursus feugiat, nunc augue
+                      blandit nunc, eu sollicitudin urna dolor sagittis.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      In hac habitasse platea dictumst. Curabitur at lacus ac
+                      velit ornare lobortis. Curabitur a felis tristique.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-block">Add new</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-2 customColumnGap">
+            <div class="card card-border-primary">
+              <div class="card-header">
+                <div class="card-actions float-right"></div>
+                <h5 class="card-title customTitleSize">in review</h5>
+              </div>
+              <div class="card-body p-3">
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Curabitur ligula sapien, tincidunt non, euismod vitae,
+                      posuere imperdiet, leo. Maecenas malesuada.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Aenean posuere, tortor sed cursus feugiat, nunc augue
+                      blandit nunc, eu sollicitudin urna dolor sagittis.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      In hac habitasse platea dictumst. Curabitur at lacus ac
+                      velit ornare lobortis. Curabitur a felis tristique.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-block">Add new</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-2 customColumnGap">
+            <div class="card card-border-primary">
+              <div class="card-header">
+                <div class="card-actions float-right"></div>
+                <h5 class="card-title customTitleSize">done (4/10)</h5>
+              </div>
+              <div class="card-body p-3">
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Curabitur ligula sapien, tincidunt non, euismod vitae,
+                      posuere imperdiet, leo. Maecenas malesuada.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          checked=""
+                        />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Aenean posuere, tortor sed cursus feugiat, nunc augue
+                      blandit nunc, eu sollicitudin urna dolor sagittis.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      In hac habitasse platea dictumst. Curabitur at lacus ac
+                      velit ornare lobortis. Curabitur a felis tristique.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <div class="card mb-3 bg-light">
+                  <div class="card-body p-3">
+                    <div class="float-right mr-n2">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" />
+                        <span class="custom-control-label"></span>
+                      </label>
+                    </div>
+                    <p>
+                      Nam pretium turpis et arcu. Duis arcu tortor, suscipit
+                      eget, imperdiet nec, imperdiet iaculis, ipsum.
+                    </p>
+                    <div class="float-right mt-n1">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                        width="32"
+                        height="32"
+                        class="rounded-circle"
+                        alt="Avatar"
+                      />
+                    </div>
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-block">Add new</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
