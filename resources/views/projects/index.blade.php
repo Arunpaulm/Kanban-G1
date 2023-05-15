@@ -30,7 +30,7 @@
                                                 <p class="text-muted text-sm"><b>Description: </b> {{ \Illuminate\Support\Str::limit($project->description, 100, $end=' ...') }} </p>
                                                 <ul class="ml-4 mb-0 fa-ul text-muted">
                                                     <li class="small"><span class="fa-li"><i class="fas fa-lg fa-calendar"></i></span> Start Date: {{ \Carbon\Carbon::parse($project->start_date)->format('d-M-Y') }}</li>
-                                                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-calendar"></i></span> End Date: {{ \Carbon\Carbon::parse($project->start_date)->format('d-M-Y') }}</li>
+                                                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-calendar"></i></span> End Date: {{ \Carbon\Carbon::parse($project->end_date)->format('d-M-Y') }}</li>
                                                 </ul>
                                             </div>
                                             <div class="col-5 text-center">

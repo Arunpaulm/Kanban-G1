@@ -62,7 +62,7 @@ class ProjectController extends Controller
 
         $project = new Project();
         $project->name = $data['name'];
-        $project->slug = $data['slug'];
+        $project->slug = str_replace(' ', '_', strtolower($data['slug']));
         $project->description = $data['description'];
         $project->start_date = $data['start_date'];
         $project->end_date = $data['end_date'];
