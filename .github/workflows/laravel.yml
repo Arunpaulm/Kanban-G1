@@ -23,8 +23,8 @@ jobs:
       #   run: composer update
       # - name: dumpautoload Dependencies
       #   run: composer dumpautoload
-      - name: Link storage creating simlink folder for files
-        run: php artisan storage:link
+      # - name: Link storage creating simlink folder for files
+      #   run: php artisan storage:link
       # - name: Generate key
       #   run: php artisan key:generate
       - name: Directory Permissions
