@@ -18,6 +18,7 @@ class ProjectDetails extends Component
     public $projectContributors, $activities, $project_id, $slug, $contributor_email, $totalTasks = 0;
     protected $projectDetails;
 
+    // Adding user as contributor to the project
     public function addContributor()
     {
         if(!$this->authorizePermission('add-contributor')) return;
@@ -57,6 +58,7 @@ class ProjectDetails extends Component
         $this->emit('closeModal', 'Contributor added successfully.');
     }
 
+    // Deleting user as contributor to the project
     public function removeContributor($user_id)
     {
         if(!$this->authorizePermission('remove-contributor')) return;
@@ -76,6 +78,7 @@ class ProjectDetails extends Component
         $this->slug = $slug;
     }
 
+    // Fetching project details 
     public function render()
     {
         $this->projectDetails = DB::table('projects')->select('projects.*')
