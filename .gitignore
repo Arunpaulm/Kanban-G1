@@ -1,12 +1,1 @@
-/app
-/config
-/database
-/bootstrap
-/public
-/resources
-/routes
-/storage
-/tests
-/vendor
-
 .DS_Store
