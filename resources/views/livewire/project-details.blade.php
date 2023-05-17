@@ -11,9 +11,6 @@
                     <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
                         <i class="fas fa-times"></i>
                     </button>
-                    <a href="{{ route('project.board', $project->slug) }}" class="btn btn-sm btn-primary">
-                        <i class="fas fa-info mr-1"></i> View Boards
-                    </a>
                 </div>
             </div>
             <div class="card-body">
@@ -63,8 +60,6 @@
                                             </div>
 
                                             <p>{{ $activity->description }}</p>
-
-
                                         </div>
                                     @endforeach
                                 @else

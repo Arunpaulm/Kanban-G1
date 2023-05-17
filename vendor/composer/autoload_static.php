@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit43b79ea0779fe36c3074e1c6395eeac3
+class ComposerStaticInit069ec141812e186052e5de46153b1a7c
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -5894,10 +5894,8 @@ class ComposerStaticInit43b79ea0779fe36c3074e1c6395eeac3
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
         'Symfony\\Polyfill\\Php80\\PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/PhpToken.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
-        'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\Feature\\SeederTest' => __DIR__ . '/../..' . '/tests/Feature/SeederTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
-        'Tests\\Unit\\ExampleTest' => __DIR__ . '/../..' . '/tests/Unit/ExampleTest.php',
         'Tests\\Unit\\ProjectTest' => __DIR__ . '/../..' . '/tests/Unit/ProjectTest.php',
         'Tests\\Unit\\TaskTest' => __DIR__ . '/../..' . '/tests/Unit/TaskTest.php',
         'Tests\\Unit\\UserTest' => __DIR__ . '/../..' . '/tests/Unit/UserTest.php',
@@ -5947,10 +5945,10 @@ class ComposerStaticInit43b79ea0779fe36c3074e1c6395eeac3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit43b79ea0779fe36c3074e1c6395eeac3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit43b79ea0779fe36c3074e1c6395eeac3::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit43b79ea0779fe36c3074e1c6395eeac3::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit43b79ea0779fe36c3074e1c6395eeac3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit069ec141812e186052e5de46153b1a7c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit069ec141812e186052e5de46153b1a7c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit069ec141812e186052e5de46153b1a7c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit069ec141812e186052e5de46153b1a7c::$classMap;
 
         }, null, ClassLoader::class);
     }
