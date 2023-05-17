@@ -1,6 +1,6 @@
-git clone <repo>
-composer update
-composer dumpautoload
-php artisan migrate
-php artisan db:seed
-php artisan storage:link
+1. git clone <repo>
+2. composer update
+3. composer dumpautoload
+4. php artisan migrate
+5. php artisan db:seed
+6. php artisan storage:link
