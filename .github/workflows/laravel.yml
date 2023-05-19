@@ -7,10 +7,11 @@ on:
     branches: ["master"]
 
 jobs:
-  laravel-tests:
+  laravel:
+    name: Laravel (PHP ${{ matrix.php-versions }})
     runs-on: ubuntu-latest
     env:
-      DB_DATABASE: kanban
+      DB_DATABASE: laravel
       DB_USERNAME: root
       DB_PASSWORD: password
 
@@ -20,7 +21,7 @@ jobs:
         env:
           MYSQL_ALLOW_EMPTY_PASSWORD: false
           MYSQL_ROOT_PASSWORD: password
-          MYSQL_DATABASE: kanban
+          MYSQL_DATABASE: laravel
         ports:
           - 3306/tcp
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
