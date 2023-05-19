@@ -65,7 +65,8 @@
                     </div>
                     @can('update-role-permission')
                         <div class="card-footer clearfix">
-                            <button type="submit" class="btn btn-primary btn-sm float-right" wire:click="savePermission()">Save</button>
+{{--                            <button type="submit" class="btn btn-primary btn-sm float-right" wire:click="savePermission()">Save</button>--}}
+                            <button type="submit" class="btn btn-primary btn-sm float-right" wire:click="$emit('confirmationPrompt')">Save</button>
                         </div>
                     @endcan
                 </div>
@@ -102,6 +103,18 @@
                 $('.permission_'+group_name).prop('checked', false);
             @this.unsetAllGroupPermission(group_name)
             }
+        });
+
+        window.livewire.on('confirmationPrompt', () => {
+            Notiflix.Confirm.show(
+                'Access Control',
+                'Are you sure you want to add or remove this access?',
+                'Yes',
+                'No',
+                function () {
+                    @this.savePermission()
+                }
+            );
         });
 
         window.livewire.on('flashMessage', (message) => {
