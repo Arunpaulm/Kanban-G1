@@ -4,3 +4,10 @@
 4. php artisan migrate
 5. php artisan db:seed
 6. php artisan storage:link
+
+composer update
+composer dumpautoload
+php artisan migrate:fresh
+php artisan db:seed
+php artisan test
+php artisan serve

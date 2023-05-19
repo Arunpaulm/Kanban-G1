@@ -27,32 +27,28 @@ class RolesSeeder extends Seeder
                 ),
             1 =>
                 array(
-                    'created_at' => '2016-04-16 21:57:30',
-                    'id' => 2,
-                    'name' => 'Customer',
-                    'guard_name' => 'web',
-                    'updated_at' => '2018-12-16 06:41:52',
-                ),
-            2 =>
-                array(
                     'created_at' => '2016-04-16 22:00:04',
-                    'id' => 3,
+                    'id' => 2,
                     'name' => 'Project Manager',
                     'guard_name' => 'web',
                     'updated_at' => '2018-12-17 09:47:02',
                 ),
-            3 =>
+            2 =>
                 array(
                     'created_at' => '2016-04-21 08:39:15',
-                    'id' => 4,
+                    'id' => 3,
                     'name' => 'Developer',
                     'guard_name' => 'web',
                     'updated_at' => '2018-12-16 06:42:02',
-                )
+                ),
+            3 =>
+            array(
+                'created_at' => '2016-04-16 21:57:30',
+                'id' => 4,
+                'name' => 'Customer',
+                'guard_name' => 'web',
+                'updated_at' => '2018-12-16 06:41:52',
+            )
         ));
-
-        $role = Role::where('name', 'Admin')->first()->givePermissionTo(Permission::all());
-        $user = \App\Models\User::where('id', 1)->first();
-        $user->assignRole($role);
     }
 }
