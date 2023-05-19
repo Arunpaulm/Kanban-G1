@@ -62,13 +62,16 @@ jobs:
         run: php artisan migrate -v
         env:
           DB_PORT: ${{ job.services.mysql.ports['3306'] }}
-          REDIS_PORT: ${{ job.services.redis.ports['6379'] }}
 
-      - name: Test with phpunit
-        run: vendor/bin/phpunit --coverage-text
+      - name: Run seeder
+        run: php artisan db:seed
         env:
           DB_PORT: ${{ job.services.mysql.ports['3306'] }}
-          REDIS_PORT: ${{ job.services.redis.ports['6379'] }}
+
+      # - name: Test with phpunit
+      #   run: vendor/bin/phpunit --coverage-text
+      #   env:
+      #     DB_PORT: ${{ job.services.mysql.ports['3306'] }}
 
       # - name: Copy .env
       #   run: php -r "file_exists('.env') || copy('.env.example', '.env');"
@@ -95,5 +98,7 @@ jobs:
       # run: php artisan migrate:fresh
       - name: Perform PhpUnit testing
         run: php artisan test
+        env:
+          DB_PORT: ${{ job.services.mysql.ports['3306'] }}
       # - name: Execute tests (Unit and Feature tests) via PHPUnit | Initiate PhpUnit testing
       #   run: vendor/bin/phpunit
