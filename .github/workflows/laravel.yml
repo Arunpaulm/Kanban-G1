@@ -37,6 +37,8 @@ jobs:
         env:
           DB_CONNECTION: sqlite
           DB_DATABASE: database/database.sqlite
+        run: php artisan migrate:fresh
+      - name: Perform PhpUnit testing
         run: php artisan test
       # - name: Execute tests (Unit and Feature tests) via PHPUnit | Initiate PhpUnit testing
       #   run: vendor/bin/phpunit
