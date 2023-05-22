@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row-12">
         @if(count($projects) > 0)
             <section class="content">
                 <div class="card card-solid">
